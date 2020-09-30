@@ -16,6 +16,9 @@
 		62C5D4EC2524BEDD0081E571 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5D4EB2524BEDD0081E571 /* StartupViewController.swift */; };
 		62C5D4ED2524BEDD0081E571 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5D4EB2524BEDD0081E571 /* StartupViewController.swift */; };
 		62C5D4EE2524BEDD0081E571 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5D4EB2524BEDD0081E571 /* StartupViewController.swift */; };
+		8D061959E4A774051D515650 /* Pods_FCJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA4FE050EFA05AC0F90E79D /* Pods_FCJ.framework */; };
+		9CCC78C3034A3177DAD7AE0E /* Pods_FCJ_FCJUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE805CA671C316FCBD8FBB1 /* Pods_FCJ_FCJUITests.framework */; };
+		F407AAAE26B252FC44FD7B62 /* Pods_FCJTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CA777B3994497DC477236E /* Pods_FCJTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DA4FE050EFA05AC0F90E79D /* Pods_FCJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C24ACD6F983AA820F99D25 /* Pods-FCJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJ.release.xcconfig"; path = "Target Support Files/Pods-FCJ/Pods-FCJ.release.xcconfig"; sourceTree = "<group>"; };
+		5AD990B7635D0403DCBA85EF /* Pods-FCJTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJTests.debug.xcconfig"; path = "Target Support Files/Pods-FCJTests/Pods-FCJTests.debug.xcconfig"; sourceTree = "<group>"; };
 		62C5D4AF2524BE4B0081E571 /* FCJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C5D4B22524BE4B0081E571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62C5D4B42524BE4B0081E571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		62C5D4D42524BE4C0081E571 /* FCJUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCJUITests.swift; sourceTree = "<group>"; };
 		62C5D4D62524BE4C0081E571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C5D4EB2524BEDD0081E571 /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
+		6CE06DA1BB4C21B050E7651D /* Pods-FCJ-FCJUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJ-FCJUITests.debug.xcconfig"; path = "Target Support Files/Pods-FCJ-FCJUITests/Pods-FCJ-FCJUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E37A69B234613544507D65E /* Pods-FCJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJTests.release.xcconfig"; path = "Target Support Files/Pods-FCJTests/Pods-FCJTests.release.xcconfig"; sourceTree = "<group>"; };
+		9EE805CA671C316FCBD8FBB1 /* Pods_FCJ_FCJUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCJ_FCJUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6CA777B3994497DC477236E /* Pods_FCJTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCJTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B420F64EDBACF0D3E09318D0 /* Pods-FCJ-FCJUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJ-FCJUITests.release.xcconfig"; path = "Target Support Files/Pods-FCJ-FCJUITests/Pods-FCJ-FCJUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FFD5057E44E33FA498E6C95B /* Pods-FCJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJ.debug.xcconfig"; path = "Target Support Files/Pods-FCJ/Pods-FCJ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D061959E4A774051D515650 /* Pods_FCJ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F407AAAE26B252FC44FD7B62 /* Pods_FCJTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CCC78C3034A3177DAD7AE0E /* Pods_FCJ_FCJUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				62C5D4C82524BE4C0081E571 /* FCJTests */,
 				62C5D4D32524BE4C0081E571 /* FCJUITests */,
 				62C5D4B02524BE4B0081E571 /* Products */,
+				F1299B02034474DCD20A5BD1 /* Pods */,
+				E76D61085579F3027CACE965 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,30 @@
 			path = FCJUITests;
 			sourceTree = "<group>";
 		};
+		E76D61085579F3027CACE965 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DA4FE050EFA05AC0F90E79D /* Pods_FCJ.framework */,
+				9EE805CA671C316FCBD8FBB1 /* Pods_FCJ_FCJUITests.framework */,
+				A6CA777B3994497DC477236E /* Pods_FCJTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1299B02034474DCD20A5BD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFD5057E44E33FA498E6C95B /* Pods-FCJ.debug.xcconfig */,
+				27C24ACD6F983AA820F99D25 /* Pods-FCJ.release.xcconfig */,
+				6CE06DA1BB4C21B050E7651D /* Pods-FCJ-FCJUITests.debug.xcconfig */,
+				B420F64EDBACF0D3E09318D0 /* Pods-FCJ-FCJUITests.release.xcconfig */,
+				5AD990B7635D0403DCBA85EF /* Pods-FCJTests.debug.xcconfig */,
+				6E37A69B234613544507D65E /* Pods-FCJTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62C5D4D92524BE4C0081E571 /* Build configuration list for PBXNativeTarget "FCJ" */;
 			buildPhases = (
+				91556FF473D71808FB9003E4 /* [CP] Check Pods Manifest.lock */,
 				62C5D4AB2524BE4B0081E571 /* Sources */,
 				62C5D4AC2524BE4B0081E571 /* Frameworks */,
 				62C5D4AD2524BE4B0081E571 /* Resources */,
+				92D20E62A06865962D47BE8E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62C5D4DC2524BE4C0081E571 /* Build configuration list for PBXNativeTarget "FCJTests" */;
 			buildPhases = (
+				36CCFD921EC432D892D0C1D2 /* [CP] Check Pods Manifest.lock */,
 				62C5D4C12524BE4C0081E571 /* Sources */,
 				62C5D4C22524BE4C0081E571 /* Frameworks */,
 				62C5D4C32524BE4C0081E571 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62C5D4DF2524BE4C0081E571 /* Build configuration list for PBXNativeTarget "FCJUITests" */;
 			buildPhases = (
+				2F365FCFF569F6180B6DDE61 /* [CP] Check Pods Manifest.lock */,
 				62C5D4CC2524BE4C0081E571 /* Sources */,
 				62C5D4CD2524BE4C0081E571 /* Frameworks */,
 				62C5D4CE2524BE4C0081E571 /* Resources */,
+				324809FC659C1672C8C2198A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +296,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F365FCFF569F6180B6DDE61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FCJ-FCJUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		324809FC659C1672C8C2198A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FCJ-FCJUITests/Pods-FCJ-FCJUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FCJ-FCJUITests/Pods-FCJ-FCJUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FCJ-FCJUITests/Pods-FCJ-FCJUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36CCFD921EC432D892D0C1D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FCJTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91556FF473D71808FB9003E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FCJ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D20E62A06865962D47BE8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FCJ/Pods-FCJ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FCJ/Pods-FCJ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FCJ/Pods-FCJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62C5D4AB2524BE4B0081E571 /* Sources */ = {
@@ -425,6 +574,7 @@
 		};
 		62C5D4DA2524BE4C0081E571 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD5057E44E33FA498E6C95B /* Pods-FCJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +594,7 @@
 		};
 		62C5D4DB2524BE4C0081E571 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C24ACD6F983AA820F99D25 /* Pods-FCJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,6 +614,7 @@
 		};
 		62C5D4DD2524BE4C0081E571 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD990B7635D0403DCBA85EF /* Pods-FCJTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +637,7 @@
 		};
 		62C5D4DE2524BE4C0081E571 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E37A69B234613544507D65E /* Pods-FCJTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +660,7 @@
 		};
 		62C5D4E02524BE4C0081E571 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE06DA1BB4C21B050E7651D /* Pods-FCJ-FCJUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +681,7 @@
 		};
 		62C5D4E12524BE4C0081E571 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B420F64EDBACF0D3E09318D0 /* Pods-FCJ-FCJUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

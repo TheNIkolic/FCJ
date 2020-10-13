@@ -3,10 +3,85 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6216F041252CCA060091D6B6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F040252CCA060091D6B6 /* UIViewExtension.swift */; };
+		6216F042252CCA060091D6B6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F040252CCA060091D6B6 /* UIViewExtension.swift */; };
+		6216F043252CCA060091D6B6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F040252CCA060091D6B6 /* UIViewExtension.swift */; };
+		6216F04C252CCAF80091D6B6 /* FCJLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F04B252CCAF80091D6B6 /* FCJLabel.swift */; };
+		6216F04D252CCAF80091D6B6 /* FCJLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F04B252CCAF80091D6B6 /* FCJLabel.swift */; };
+		6216F04E252CCAF80091D6B6 /* FCJLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F04B252CCAF80091D6B6 /* FCJLabel.swift */; };
+		6216F056252CCE890091D6B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F055252CCE890091D6B6 /* BaseViewController.swift */; };
+		6216F057252CCE890091D6B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F055252CCE890091D6B6 /* BaseViewController.swift */; };
+		6216F058252CCE890091D6B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F055252CCE890091D6B6 /* BaseViewController.swift */; };
+		6216F060252CFFA20091D6B6 /* NextGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F05F252CFFA20091D6B6 /* NextGameView.swift */; };
+		6216F061252CFFA20091D6B6 /* NextGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F05F252CFFA20091D6B6 /* NextGameView.swift */; };
+		6216F062252CFFA20091D6B6 /* NextGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216F05F252CFFA20091D6B6 /* NextGameView.swift */; };
+		6226BAD6253470880009779B /* BaseDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAD5253470880009779B /* BaseDataController.swift */; };
+		6226BAD7253470880009779B /* BaseDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAD5253470880009779B /* BaseDataController.swift */; };
+		6226BAD8253470880009779B /* BaseDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAD5253470880009779B /* BaseDataController.swift */; };
+		6226BAE9253472C80009779B /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAE8253472C80009779B /* DataProvider.swift */; };
+		6226BAEA253472C80009779B /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAE8253472C80009779B /* DataProvider.swift */; };
+		6226BAEB253472C80009779B /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAE8253472C80009779B /* DataProvider.swift */; };
+		6226BAF3253472F70009779B /* BaseRestDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAF2253472F70009779B /* BaseRestDataClient.swift */; };
+		6226BAF4253472F70009779B /* BaseRestDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAF2253472F70009779B /* BaseRestDataClient.swift */; };
+		6226BAF5253472F70009779B /* BaseRestDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAF2253472F70009779B /* BaseRestDataClient.swift */; };
+		6226BAFB253473530009779B /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAFA253473530009779B /* ErrorResponse.swift */; };
+		6226BAFC253473530009779B /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAFA253473530009779B /* ErrorResponse.swift */; };
+		6226BAFD253473530009779B /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BAFA253473530009779B /* ErrorResponse.swift */; };
+		6226BB05253473720009779B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB04253473720009779B /* Team.swift */; };
+		6226BB06253473720009779B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB04253473720009779B /* Team.swift */; };
+		6226BB07253473720009779B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB04253473720009779B /* Team.swift */; };
+		6226BB0D253473B70009779B /* TeamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB0C253473B70009779B /* TeamRequest.swift */; };
+		6226BB0E253473B70009779B /* TeamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB0C253473B70009779B /* TeamRequest.swift */; };
+		6226BB0F253473B70009779B /* TeamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB0C253473B70009779B /* TeamRequest.swift */; };
+		6226BB1E2534791D0009779B /* TeamRestDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB1D2534791D0009779B /* TeamRestDataClient.swift */; };
+		6226BB1F2534791D0009779B /* TeamRestDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB1D2534791D0009779B /* TeamRestDataClient.swift */; };
+		6226BB202534791D0009779B /* TeamRestDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB1D2534791D0009779B /* TeamRestDataClient.swift */; };
+		6226BB2D25347E820009779B /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB2C25347E820009779B /* EncodableExtensions.swift */; };
+		6226BB2E25347E820009779B /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB2C25347E820009779B /* EncodableExtensions.swift */; };
+		6226BB2F25347E820009779B /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB2C25347E820009779B /* EncodableExtensions.swift */; };
+		6226BB3425347EB20009779B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB3325347EB20009779B /* StringExtensions.swift */; };
+		6226BB3525347EB20009779B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB3325347EB20009779B /* StringExtensions.swift */; };
+		6226BB3625347EB20009779B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB3325347EB20009779B /* StringExtensions.swift */; };
+		6226BB3B253492B30009779B /* FCJButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB3A253492B30009779B /* FCJButton.swift */; };
+		6226BB3C253492B30009779B /* FCJButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB3A253492B30009779B /* FCJButton.swift */; };
+		6226BB3D253492B30009779B /* FCJButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB3A253492B30009779B /* FCJButton.swift */; };
+		6226BB42253494150009779B /* TeamsDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB41253494150009779B /* TeamsDataViewController.swift */; };
+		6226BB43253494150009779B /* TeamsDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB41253494150009779B /* TeamsDataViewController.swift */; };
+		6226BB44253494150009779B /* TeamsDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB41253494150009779B /* TeamsDataViewController.swift */; };
+		6226BB492534AF950009779B /* TeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB482534AF950009779B /* TeamsTableViewCell.swift */; };
+		6226BB4A2534AF950009779B /* TeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB482534AF950009779B /* TeamsTableViewCell.swift */; };
+		6226BB4B2534AF950009779B /* TeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB482534AF950009779B /* TeamsTableViewCell.swift */; };
+		6226BB502534BB9C0009779B /* TeamEditDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB4F2534BB9C0009779B /* TeamEditDataView.swift */; };
+		6226BB512534BB9C0009779B /* TeamEditDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB4F2534BB9C0009779B /* TeamEditDataView.swift */; };
+		6226BB522534BB9C0009779B /* TeamEditDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB4F2534BB9C0009779B /* TeamEditDataView.swift */; };
+		6226BB5F2534E1200009779B /* TeamsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB5E2534E1200009779B /* TeamsTableView.swift */; };
+		6226BB602534E1200009779B /* TeamsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB5E2534E1200009779B /* TeamsTableView.swift */; };
+		6226BB612534E1200009779B /* TeamsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB5E2534E1200009779B /* TeamsTableView.swift */; };
+		6226BB782534E8E40009779B /* AddTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB772534E8E40009779B /* AddTeamView.swift */; };
+		6226BB792534E8E40009779B /* AddTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB772534E8E40009779B /* AddTeamView.swift */; };
+		6226BB7A2534E8E40009779B /* AddTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB772534E8E40009779B /* AddTeamView.swift */; };
+		6226BB902535254A0009779B /* TeamDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB8F2535254A0009779B /* TeamDataDelegate.swift */; };
+		6226BB912535254A0009779B /* TeamDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB8F2535254A0009779B /* TeamDataDelegate.swift */; };
+		6226BB922535254A0009779B /* TeamDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226BB8F2535254A0009779B /* TeamDataDelegate.swift */; };
+		62529CA825310C9B00A5C8F5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62529CA725310C9B00A5C8F5 /* TabBarController.swift */; };
+		62529CA925310C9B00A5C8F5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62529CA725310C9B00A5C8F5 /* TabBarController.swift */; };
+		62529CAA25310C9B00A5C8F5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62529CA725310C9B00A5C8F5 /* TabBarController.swift */; };
+		6268D5D8252DFABB0009D865 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268D5D7252DFABB0009D865 /* UIColorExtension.swift */; };
+		6268D5D9252DFABB0009D865 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268D5D7252DFABB0009D865 /* UIColorExtension.swift */; };
+		6268D5DA252DFABB0009D865 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268D5D7252DFABB0009D865 /* UIColorExtension.swift */; };
+		6268D5E1252E00D30009D865 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6268D5DF252E00D20009D865 /* Roboto-Light.ttf */; };
+		6268D5E2252E00D30009D865 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6268D5DF252E00D20009D865 /* Roboto-Light.ttf */; };
+		6268D5E3252E00D30009D865 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6268D5DF252E00D20009D865 /* Roboto-Light.ttf */; };
+		6268D5E4252E00D30009D865 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6268D5E0252E00D30009D865 /* Roboto-Bold.ttf */; };
+		6268D5E5252E00D30009D865 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6268D5E0252E00D30009D865 /* Roboto-Bold.ttf */; };
+		6268D5E6252E00D30009D865 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6268D5E0252E00D30009D865 /* Roboto-Bold.ttf */; };
+		6268D5EB252E01BD0009D865 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268D5EA252E01BD0009D865 /* UIFontExtension.swift */; };
+		6268D5EC252E01BD0009D865 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268D5EA252E01BD0009D865 /* UIFontExtension.swift */; };
+		6268D5ED252E01BD0009D865 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268D5EA252E01BD0009D865 /* UIFontExtension.swift */; };
 		62C5D4B32524BE4B0081E571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5D4B22524BE4B0081E571 /* AppDelegate.swift */; };
 		62C5D4B52524BE4B0081E571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5D4B42524BE4B0081E571 /* SceneDelegate.swift */; };
 		62C5D4BC2524BE4C0081E571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C5D4BB2524BE4C0081E571 /* Assets.xcassets */; };
@@ -42,6 +117,31 @@
 		0DA4FE050EFA05AC0F90E79D /* Pods_FCJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C24ACD6F983AA820F99D25 /* Pods-FCJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJ.release.xcconfig"; path = "Target Support Files/Pods-FCJ/Pods-FCJ.release.xcconfig"; sourceTree = "<group>"; };
 		5AD990B7635D0403DCBA85EF /* Pods-FCJTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJTests.debug.xcconfig"; path = "Target Support Files/Pods-FCJTests/Pods-FCJTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6216F040252CCA060091D6B6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		6216F04B252CCAF80091D6B6 /* FCJLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCJLabel.swift; sourceTree = "<group>"; };
+		6216F055252CCE890091D6B6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6216F05F252CFFA20091D6B6 /* NextGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameView.swift; sourceTree = "<group>"; };
+		6226BAD5253470880009779B /* BaseDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataController.swift; sourceTree = "<group>"; };
+		6226BAE8253472C80009779B /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		6226BAF2253472F70009779B /* BaseRestDataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRestDataClient.swift; sourceTree = "<group>"; };
+		6226BAFA253473530009779B /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		6226BB04253473720009779B /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		6226BB0C253473B70009779B /* TeamRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRequest.swift; sourceTree = "<group>"; };
+		6226BB1D2534791D0009779B /* TeamRestDataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRestDataClient.swift; sourceTree = "<group>"; };
+		6226BB2C25347E820009779B /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
+		6226BB3325347EB20009779B /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		6226BB3A253492B30009779B /* FCJButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCJButton.swift; sourceTree = "<group>"; };
+		6226BB41253494150009779B /* TeamsDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDataViewController.swift; sourceTree = "<group>"; };
+		6226BB482534AF950009779B /* TeamsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewCell.swift; sourceTree = "<group>"; };
+		6226BB4F2534BB9C0009779B /* TeamEditDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamEditDataView.swift; sourceTree = "<group>"; };
+		6226BB5E2534E1200009779B /* TeamsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableView.swift; sourceTree = "<group>"; };
+		6226BB772534E8E40009779B /* AddTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamView.swift; sourceTree = "<group>"; };
+		6226BB8F2535254A0009779B /* TeamDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataDelegate.swift; sourceTree = "<group>"; };
+		62529CA725310C9B00A5C8F5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		6268D5D7252DFABB0009D865 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		6268D5DF252E00D20009D865 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		6268D5E0252E00D30009D865 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		6268D5EA252E01BD0009D865 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		62C5D4AF2524BE4B0081E571 /* FCJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C5D4B22524BE4B0081E571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62C5D4B42524BE4B0081E571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +191,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6216F03F252CC9EC0091D6B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6216F040252CCA060091D6B6 /* UIViewExtension.swift */,
+				6268D5D7252DFABB0009D865 /* UIColorExtension.swift */,
+				6268D5EA252E01BD0009D865 /* UIFontExtension.swift */,
+				6226BB2C25347E820009779B /* EncodableExtensions.swift */,
+				6226BB3325347EB20009779B /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6216F04A252CCAB40091D6B6 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				6216F04B252CCAF80091D6B6 /* FCJLabel.swift */,
+				6226BB3A253492B30009779B /* FCJButton.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		6226BAD4253470650009779B /* DataController */ = {
+			isa = PBXGroup;
+			children = (
+				6226BAD5253470880009779B /* BaseDataController.swift */,
+				6226BB5D2534E0C90009779B /* TeamsDataController */,
+			);
+			path = DataController;
+			sourceTree = "<group>";
+		};
+		6226BAE7253472AA0009779B /* DataManagement */ = {
+			isa = PBXGroup;
+			children = (
+				6226BB0B253473980009779B /* RequestModels */,
+				6226BAF92534732E0009779B /* ResponseModels */,
+				6226BB16253478680009779B /* RestDataClient */,
+				6226BAE8253472C80009779B /* DataProvider.swift */,
+			);
+			path = DataManagement;
+			sourceTree = "<group>";
+		};
+		6226BAF92534732E0009779B /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				6226BAFA253473530009779B /* ErrorResponse.swift */,
+				6226BB04253473720009779B /* Team.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		6226BB0B253473980009779B /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				6226BB0C253473B70009779B /* TeamRequest.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		6226BB16253478680009779B /* RestDataClient */ = {
+			isa = PBXGroup;
+			children = (
+				6226BAF2253472F70009779B /* BaseRestDataClient.swift */,
+				6226BB1D2534791D0009779B /* TeamRestDataClient.swift */,
+			);
+			path = RestDataClient;
+			sourceTree = "<group>";
+		};
+		6226BB5D2534E0C90009779B /* TeamsDataController */ = {
+			isa = PBXGroup;
+			children = (
+				6226BB41253494150009779B /* TeamsDataViewController.swift */,
+				6226BB8F2535254A0009779B /* TeamDataDelegate.swift */,
+				6226BB682534E82C0009779B /* TeamsTableView */,
+				6226BB6C2534E85E0009779B /* AddTeamPopupView */,
+				6226BB88253520D10009779B /* TeamEditDataPopupView */,
+			);
+			path = TeamsDataController;
+			sourceTree = "<group>";
+		};
+		6226BB682534E82C0009779B /* TeamsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				6226BB5E2534E1200009779B /* TeamsTableView.swift */,
+				6226BB482534AF950009779B /* TeamsTableViewCell.swift */,
+			);
+			path = TeamsTableView;
+			sourceTree = "<group>";
+		};
+		6226BB6C2534E85E0009779B /* AddTeamPopupView */ = {
+			isa = PBXGroup;
+			children = (
+				6226BB772534E8E40009779B /* AddTeamView.swift */,
+			);
+			path = AddTeamPopupView;
+			sourceTree = "<group>";
+		};
+		6226BB88253520D10009779B /* TeamEditDataPopupView */ = {
+			isa = PBXGroup;
+			children = (
+				6226BB4F2534BB9C0009779B /* TeamEditDataView.swift */,
+			);
+			path = TeamEditDataPopupView;
+			sourceTree = "<group>";
+		};
+		6268D5DE252E00C10009D865 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6268D5E0252E00D30009D865 /* Roboto-Bold.ttf */,
+				6268D5DF252E00D20009D865 /* Roboto-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		62C5D4A62524BE4A0081E571 = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +329,15 @@
 		62C5D4B12524BE4B0081E571 /* FCJ */ = {
 			isa = PBXGroup;
 			children = (
+				6226BAE7253472AA0009779B /* DataManagement */,
+				6216F055252CCE890091D6B6 /* BaseViewController.swift */,
+				62529CA725310C9B00A5C8F5 /* TabBarController.swift */,
 				62C5D4EB2524BEDD0081E571 /* StartupViewController.swift */,
+				6216F05F252CFFA20091D6B6 /* NextGameView.swift */,
+				6216F03F252CC9EC0091D6B6 /* Extensions */,
+				6216F04A252CCAB40091D6B6 /* CustomControls */,
+				6268D5DE252E00C10009D865 /* Fonts */,
+				6226BAD4253470650009779B /* DataController */,
 				62C5D4BB2524BE4C0081E571 /* Assets.xcassets */,
 				62C5D4BD2524BE4C0081E571 /* LaunchScreen.storyboard */,
 				62C5D4B22524BE4B0081E571 /* AppDelegate.swift */,
@@ -164,7 +385,6 @@
 				5AD990B7635D0403DCBA85EF /* Pods-FCJTests.debug.xcconfig */,
 				6E37A69B234613544507D65E /* Pods-FCJTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,6 +498,8 @@
 			files = (
 				62C5D4BF2524BE4C0081E571 /* LaunchScreen.storyboard in Resources */,
 				62C5D4BC2524BE4C0081E571 /* Assets.xcassets in Resources */,
+				6268D5E4252E00D30009D865 /* Roboto-Bold.ttf in Resources */,
+				6268D5E1252E00D30009D865 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +507,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6268D5E5252E00D30009D865 /* Roboto-Bold.ttf in Resources */,
+				6268D5E2252E00D30009D865 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +516,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6268D5E6252E00D30009D865 /* Roboto-Bold.ttf in Resources */,
+				6268D5E3252E00D30009D865 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +632,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				62C5D4B32524BE4B0081E571 /* AppDelegate.swift in Sources */,
+				6226BB2D25347E820009779B /* EncodableExtensions.swift in Sources */,
+				6268D5EB252E01BD0009D865 /* UIFontExtension.swift in Sources */,
 				62C5D4EC2524BEDD0081E571 /* StartupViewController.swift in Sources */,
+				6226BB5F2534E1200009779B /* TeamsTableView.swift in Sources */,
+				6226BB1E2534791D0009779B /* TeamRestDataClient.swift in Sources */,
+				6226BB502534BB9C0009779B /* TeamEditDataView.swift in Sources */,
+				6226BB05253473720009779B /* Team.swift in Sources */,
+				6226BB42253494150009779B /* TeamsDataViewController.swift in Sources */,
+				62529CA825310C9B00A5C8F5 /* TabBarController.swift in Sources */,
+				6216F041252CCA060091D6B6 /* UIViewExtension.swift in Sources */,
+				6268D5D8252DFABB0009D865 /* UIColorExtension.swift in Sources */,
+				6226BB492534AF950009779B /* TeamsTableViewCell.swift in Sources */,
+				6226BB3B253492B30009779B /* FCJButton.swift in Sources */,
+				6226BAE9253472C80009779B /* DataProvider.swift in Sources */,
+				6216F04C252CCAF80091D6B6 /* FCJLabel.swift in Sources */,
+				6226BB902535254A0009779B /* TeamDataDelegate.swift in Sources */,
+				6226BAD6253470880009779B /* BaseDataController.swift in Sources */,
 				62C5D4B52524BE4B0081E571 /* SceneDelegate.swift in Sources */,
+				6226BB782534E8E40009779B /* AddTeamView.swift in Sources */,
+				6226BAF3253472F70009779B /* BaseRestDataClient.swift in Sources */,
+				6226BB0D253473B70009779B /* TeamRequest.swift in Sources */,
+				6216F060252CFFA20091D6B6 /* NextGameView.swift in Sources */,
+				6216F056252CCE890091D6B6 /* BaseViewController.swift in Sources */,
+				6226BAFB253473530009779B /* ErrorResponse.swift in Sources */,
+				6226BB3425347EB20009779B /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +664,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6216F057252CCE890091D6B6 /* BaseViewController.swift in Sources */,
+				6226BB1F2534791D0009779B /* TeamRestDataClient.swift in Sources */,
+				6268D5D9252DFABB0009D865 /* UIColorExtension.swift in Sources */,
+				6226BB512534BB9C0009779B /* TeamEditDataView.swift in Sources */,
+				6226BB06253473720009779B /* Team.swift in Sources */,
+				6226BAF4253472F70009779B /* BaseRestDataClient.swift in Sources */,
+				6226BB2E25347E820009779B /* EncodableExtensions.swift in Sources */,
+				6226BB0E253473B70009779B /* TeamRequest.swift in Sources */,
+				6268D5EC252E01BD0009D865 /* UIFontExtension.swift in Sources */,
+				6226BB792534E8E40009779B /* AddTeamView.swift in Sources */,
+				62529CA925310C9B00A5C8F5 /* TabBarController.swift in Sources */,
+				6226BB912535254A0009779B /* TeamDataDelegate.swift in Sources */,
+				6216F061252CFFA20091D6B6 /* NextGameView.swift in Sources */,
+				6226BAEA253472C80009779B /* DataProvider.swift in Sources */,
+				6226BB602534E1200009779B /* TeamsTableView.swift in Sources */,
+				6226BB4A2534AF950009779B /* TeamsTableViewCell.swift in Sources */,
+				6216F04D252CCAF80091D6B6 /* FCJLabel.swift in Sources */,
+				6226BB3525347EB20009779B /* StringExtensions.swift in Sources */,
+				6216F042252CCA060091D6B6 /* UIViewExtension.swift in Sources */,
 				62C5D4ED2524BEDD0081E571 /* StartupViewController.swift in Sources */,
+				6226BB43253494150009779B /* TeamsDataViewController.swift in Sources */,
+				6226BAD7253470880009779B /* BaseDataController.swift in Sources */,
 				62C5D4CA2524BE4C0081E571 /* FCJTests.swift in Sources */,
+				6226BB3C253492B30009779B /* FCJButton.swift in Sources */,
+				6226BAFC253473530009779B /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +696,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6216F058252CCE890091D6B6 /* BaseViewController.swift in Sources */,
+				6226BB202534791D0009779B /* TeamRestDataClient.swift in Sources */,
+				6268D5DA252DFABB0009D865 /* UIColorExtension.swift in Sources */,
+				6226BB522534BB9C0009779B /* TeamEditDataView.swift in Sources */,
+				6226BB07253473720009779B /* Team.swift in Sources */,
+				6226BAF5253472F70009779B /* BaseRestDataClient.swift in Sources */,
+				6226BB2F25347E820009779B /* EncodableExtensions.swift in Sources */,
+				6226BB0F253473B70009779B /* TeamRequest.swift in Sources */,
+				6268D5ED252E01BD0009D865 /* UIFontExtension.swift in Sources */,
+				6226BB7A2534E8E40009779B /* AddTeamView.swift in Sources */,
+				62529CAA25310C9B00A5C8F5 /* TabBarController.swift in Sources */,
+				6226BB922535254A0009779B /* TeamDataDelegate.swift in Sources */,
+				6216F062252CFFA20091D6B6 /* NextGameView.swift in Sources */,
+				6226BAEB253472C80009779B /* DataProvider.swift in Sources */,
+				6226BB612534E1200009779B /* TeamsTableView.swift in Sources */,
+				6226BB4B2534AF950009779B /* TeamsTableViewCell.swift in Sources */,
+				6216F04E252CCAF80091D6B6 /* FCJLabel.swift in Sources */,
+				6226BB3625347EB20009779B /* StringExtensions.swift in Sources */,
+				6216F043252CCA060091D6B6 /* UIViewExtension.swift in Sources */,
 				62C5D4EE2524BEDD0081E571 /* StartupViewController.swift in Sources */,
+				6226BB44253494150009779B /* TeamsDataViewController.swift in Sources */,
+				6226BAD8253470880009779B /* BaseDataController.swift in Sources */,
 				62C5D4D52524BE4C0081E571 /* FCJUITests.swift in Sources */,
+				6226BB3D253492B30009779B /* FCJButton.swift in Sources */,
+				6226BAFD253473530009779B /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +802,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -562,7 +857,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -581,6 +876,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CE5X7AHK6;
 				INFOPLIST_FILE = FCJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -601,6 +897,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CE5X7AHK6;
 				INFOPLIST_FILE = FCJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

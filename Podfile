@@ -8,6 +8,7 @@ target 'FCJ' do
   # Pods for FCJ
 
   pod 'SnapKit'
+  pod 'Alamofire'
 
   target 'FCJTests' do
     inherit! :search_paths

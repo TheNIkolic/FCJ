@@ -8,7 +8,9 @@ import SnapKit
 
 class BaseViewController: UIViewController {
     
-    var screenOrientation: String = ""
+    var mainTopOffset: CGFloat {
+        return 150
+    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

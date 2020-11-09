@@ -1,5 +1,5 @@
 //
-//  TeamRestDataClient.swift
+//  CompetitionRestDataClient.swift
 //  FCJ
 //
 
@@ -7,18 +7,18 @@ import Alamofire
 
 extension RestDataClient {
     
-    func createTeam(request: TeamRequest, successHandler: ((Team) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
+    func createCompetition(request: CompetitionRequest, successHandler: ((Competition) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
         
-        let url: String = teamBaseUrl
+        let url: String = competitionBaseUrl
         
-        AF.request(url.url!, method: .post, parameters: request.dictionary, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: Team.self) { (response) in
+        AF.request(url.url!, method: .post, parameters: request.dictionary, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: Competition.self) { (response) in
             let errorResponse: ErrorResponse = ErrorResponse()
             if let code = response.response?.statusCode {
                 if code >= 200 && code < 300 {
                     
-                    guard let team = response.value else { return }
+                    guard let competition = response.value else { return }
                     
-                    successHandler?(team)
+                    successHandler?(competition)
                     return
                 }
                 else {
@@ -33,18 +33,18 @@ extension RestDataClient {
         }
     }
     
-    func getAllTeams(successHandler: (([Team]) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
+    func getAllCompetitions(successHandler: (([Competition]) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
         
-        let url: String = teamBaseUrl
+        let url: String = competitionBaseUrl
         
-        AF.request(url.url!, method: .get, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: [Team].self) { (response) in
+        AF.request(url.url!, method: .get, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: [Competition].self) { (response) in
             let errorResponse: ErrorResponse = ErrorResponse()
             if let code = response.response?.statusCode {
                 if code >= 200 && code < 300 {
                     
-                    guard let teams = response.value else { return }
+                    guard let competitions = response.value else { return }
                     
-                    successHandler?(teams)
+                    successHandler?(competitions)
                     return
                 }
                 else {
@@ -59,18 +59,18 @@ extension RestDataClient {
         }
     }
     
-    func getSingleTeam(teamID: Int, successHandler: ((Team) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
+    func getSingleCompetition(competitionID: Int, successHandler: ((Competition) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
         
-        let url: String = teamBaseUrl + "/\(teamID)"
+        let url: String = competitionBaseUrl + "/\(competitionID)"
         
-        AF.request(url.url!, method: .get, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: Team.self) { (response) in
+        AF.request(url.url!, method: .get, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: Competition.self) { (response) in
             let errorResponse: ErrorResponse = ErrorResponse()
             if let code = response.response?.statusCode {
                 if code >= 200 && code < 300 {
                     
-                    guard let team = response.value else { return }
+                    guard let competition = response.value else { return }
                     
-                    successHandler?(team)
+                    successHandler?(competition)
                     return
                 }
                 else {
@@ -85,18 +85,18 @@ extension RestDataClient {
         }
     }
     
-    func editTeam(request: Team, successHandler: ((Team) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
+    func editCompetition(request: Competition, successHandler: ((Competition) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
         
-        let url: String = teamBaseUrl
+        let url: String = competitionBaseUrl
         
-        AF.request(url.url!, method: .post, parameters: request.dictionary, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: Team.self) { (response) in
+        AF.request(url.url!, method: .post, parameters: request.dictionary, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: Competition.self) { (response) in
             let errorResponse: ErrorResponse = ErrorResponse()
             if let code = response.response?.statusCode {
                 if code >= 200 && code < 300 {
                     
-                    guard let team = response.value else { return }
+                    guard let competition = response.value else { return }
                     
-                    successHandler?(team)
+                    successHandler?(competition)
                     return
                 }
                 else {
@@ -111,11 +111,11 @@ extension RestDataClient {
         }
     }
     
-    func deleteTeam(teamID: Int, successHandler: ((String) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
+    func deleteCompetition(competitionID: Int, successHandler: ((String) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
         
-        let url: String = teamBaseUrl + "/\(teamID)"
+        let url: String = competitionBaseUrl + "/\(competitionID)"
         
-        AF.request(url.url!, method: .delete, parameters: teamID.dictionary, encoding: JSONEncoding.default, headers: headers).responseString { (response) in
+        AF.request(url.url!, method: .delete, parameters: competitionID.dictionary, encoding: JSONEncoding.default, headers: headers).responseString { (response) in
             let errorResponse: ErrorResponse = ErrorResponse()
             if let code = response.response?.statusCode {
                 if code >= 200 && code < 300 {

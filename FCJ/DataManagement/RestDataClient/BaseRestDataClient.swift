@@ -35,7 +35,9 @@ struct ResponseKeys {
 class RestDataClient {
     
     var baseUrl: String = "https://fkj-server-v1.herokuapp.com/api"
+    var competitionBaseUrl: String = "https://fkj-server-v1.herokuapp.com/api/competitions"
     var teamBaseUrl: String = "https://fkj-server-v1.herokuapp.com/api/teams"
+    var matchBaseUrl: String = "https://fkj-server-v1.herokuapp.com/api/matches"
     
     var headers: HTTPHeaders {
         return [

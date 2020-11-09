@@ -30,11 +30,17 @@ class TeamsTableView: UITableView {
     }
     
     func setupDataSource() {
-        dataProvider.getAllTeams { (teams) in
-            self.teamsDataSource = teams
-            self.reloadData()
-        } failHandler: { (error) in
-            print(error.message)
+        UIView.animate(withDuration: AnimationDuration.normal) {
+            self.alpha = AlphaComponent.fullyTransparent
+            self.teamsDataSource.removeAll()
+        } completion: { (_) in
+            dataProvider.getAllTeams { (teams) in
+                self.teamsDataSource = teams
+                self.reloadData()
+                self.alpha = AlphaComponent.fullyVisible
+            } failHandler: { (error) in
+                print(error.message)
+            }
         }
     }
 }
@@ -53,8 +59,9 @@ extension TeamsTableView: UITableViewDataSource {
         
         let teamsData = teamsDataSource[indexPath.row]
         
-        teamsCell.teamImage = UIImage(named: teamsData.imageName)
+        teamsCell.teamImageUrl = teamsData.imageUrl
         teamsCell.teamName = teamsData.name
+        teamsCell.teamHomeTown = teamsData.homeTown
         
         return teamsCell
     }

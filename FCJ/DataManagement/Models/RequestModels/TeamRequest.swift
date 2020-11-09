@@ -5,5 +5,6 @@
 
 class TeamRequest: Codable {
     var name: String = ""
-    var imageName: String = ""
+    var imageUrl: String = ""
+    var homeTown: String = ""
 }

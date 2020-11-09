@@ -7,13 +7,15 @@ class Team: Codable {
     
     var id: Int = 0
     var name: String = ""
-    var imageName: String = ""
+    var imageUrl: String = ""
+    var homeTown: String = ""
 }
 
 extension Team {
     enum CodingKeys: String, CodingKey {
         case id
         case name
-        case imageName
+        case imageUrl
+        case homeTown
     }
 }

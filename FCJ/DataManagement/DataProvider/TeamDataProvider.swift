@@ -1,16 +1,9 @@
 //
-//  DataProvider.swift
+//  TeamDataProvider.swift
 //  FCJ
 //
 
-import Foundation
-
-let dataProvider = DataProvider()
-
-class DataProvider {
-    
-    public let restDataClient: RestDataClient = RestDataClient()
-    
+extension DataProvider {
     func createTeam(request: TeamRequest, successHandler: ((Team) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
         restDataClient.createTeam(request: request, successHandler: successHandler, failHandler: failHandler)
     }

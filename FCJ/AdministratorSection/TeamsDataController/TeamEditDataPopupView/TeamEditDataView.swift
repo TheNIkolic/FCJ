@@ -164,7 +164,7 @@ class TeamEditDataView: UIView {
                 request.imageUrl = self.teamImageField.text ?? ""
                 request.homeTown = self.teamHomeTownField.text ?? ""
                 dataProvider.editTeam(request: request) { (team) in
-                    print(team)
+                    
                 } failHandler: { (error) in
                     print(error.message)
                 }

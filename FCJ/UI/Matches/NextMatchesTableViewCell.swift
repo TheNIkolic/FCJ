@@ -1,24 +1,20 @@
 //
-//  MatchView.swift
+//  NextMatchesTableViewCell.swift
 //  FCJ
 //
 
 import UIKit
 
-public enum MatchStatus {
-    case nextMatch
-    case upcoming
-    case prvious
-}
-
 private struct Constants {
     static let firstLeagueImageViewSize = CGSize(width: 55, height: 55)
-    static let teamImageViewSizeBig = CGSize(width: 80, height: 80)
-    static let teamImageViewSizeSmall = CGSize(width: 60, height: 60)
+    static let teamImageViewSize = CGSize(width: 60, height: 60)
 }
 
-class MatchView: UIView {
+class NextMatchesTableViewCell: UITableViewCell {
     
+    static let reuseIdentifier: String = "NextMatchesTableViewCell"
+    
+    private let containerView: UIView = UIView()
     private let homeTeamImageView: FCJImageView = FCJImageView()
     private let homeTeamNameLabel: FCJLabel = FCJLabel()
     private let homeTeamHomeTownLabel: FCJLabel = FCJLabel()
@@ -30,25 +26,6 @@ class MatchView: UIView {
     private let timeContentLabel: FCJLabel = FCJLabel()
     private let timeTitleLabel: FCJLabel = FCJLabel()
     private let competitionImageView: FCJImageView = FCJImageView()
-    private let roundTitleLabel: FCJLabel = FCJLabel()
-    private let roundContentLabel: FCJLabel = FCJLabel()
-    private let seasonTitleLabel: FCJLabel = FCJLabel()
-    private let seasonContentLabel: FCJLabel = FCJLabel()
-    private let locationContentLabel: FCJLabel = FCJLabel()
-    private let locationTitleLabel: FCJLabel = FCJLabel()
-    
-    var status: MatchStatus = .nextMatch {
-        didSet {
-            switch status {
-            case .nextMatch:
-                nextMatchLayout()
-            case .upcoming:
-                print("")
-            case .prvious:
-                print("")
-            }
-        }
-    }
     
     var homeTeamImage: String = "" {
         didSet {
@@ -104,43 +81,21 @@ class MatchView: UIView {
         }
     }
     
-    var comptetitionStageName: String = "" {
-        didSet {
-            roundTitleLabel.text = comptetitionStageName.uppercased()
-        }
-    }
-
-    var round: String = "" {
-        didSet {
-            roundContentLabel.text = round + "."
-        }
-    }
-    
-    var season: String = "" {
-        didSet {
-            seasonContentLabel.text = season
-        }
-    }
-    
-    var location: String = "" {
-        didSet {
-            locationContentLabel.text = location
-        }
-    }
-    
-    public init() {
-        super.init(frame: CGRect.zero)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         setup()
     }
     
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        setup()
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     private func setup() {
+        backgroundColor = UIColor.fcjClear
+        selectionStyle = .none
+        
+        addContainerView()
         addHomeTeamImageView()
         addHomeTeamNameLabel()
         addHomeTeamHomeTownLabel()
@@ -152,58 +107,60 @@ class MatchView: UIView {
         addTimeContentLabel()
         addTimeTitleLabel()
         addCopetitionImageView()
-        addRoundTitleLabel()
-        addRoundContentLabel()
-        addSeasonTitleLabel()
-        addSeasonContentLabel()
-        addLocationContentLabel()
-        addLocationTitleLabel()
         
         setupConstraints()
+    }
+    
+    private func addContainerView() {
+        containerView.backgroundColor = UIColor.fcjWhite
+        containerView.applyShadowWith(color: UIColor.fcjBlack, offset: ShadowValues.Regular.offset, opacity: ShadowValues.Regular.opacity, radius: ShadowValues.Regular.radius)
+        containerView.layer.cornerRadius = Sizes.CornerRadius.big
+        
+        contentView.addSubview(containerView)
     }
     
     private func addHomeTeamImageView() {
         homeTeamImageView.contentMode = .scaleAspectFit
         
-        self.addSubview(homeTeamImageView)
+        containerView.addSubview(homeTeamImageView)
     }
     
     private func addHomeTeamNameLabel() {
         homeTeamNameLabel.textColor = UIColor.fcjDefaultBlue
-        homeTeamNameLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.standard)
+        homeTeamNameLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.small)
         homeTeamNameLabel.textAlignment = .center
         
-        self.addSubview(homeTeamNameLabel)
+        containerView.addSubview(homeTeamNameLabel)
     }
     
     private func addHomeTeamHomeTownLabel() {
         homeTeamHomeTownLabel.textColor = UIColor.fcjBlack
-        homeTeamHomeTownLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.standard)
+        homeTeamHomeTownLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.small)
         homeTeamHomeTownLabel.textAlignment = .center
         
-        self.addSubview(homeTeamHomeTownLabel)
+        containerView.addSubview(homeTeamHomeTownLabel)
     }
     
     private func addAwayTeamImageView() {
         awayTeamImageView.contentMode = .scaleAspectFit
         
-        self.addSubview(awayTeamImageView)
+        containerView.addSubview(awayTeamImageView)
     }
     
     private func addAwayTeamNameLabel() {
         awayTeamNameLabel.textColor = UIColor.fcjDefaultBlue
-        awayTeamNameLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.standard)
+        awayTeamNameLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.small)
         awayTeamNameLabel.textAlignment = .center
         
-        self.addSubview(awayTeamNameLabel)
+        containerView.addSubview(awayTeamNameLabel)
     }
     
     private func addAwayTeamHomeTownLabel() {
         awayTeamHomeTownLabel.textColor = UIColor.fcjBlack
-        awayTeamHomeTownLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.standard)
+        awayTeamHomeTownLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.small)
         awayTeamHomeTownLabel.textAlignment = .center
         
-        self.addSubview(awayTeamHomeTownLabel)
+        containerView.addSubview(awayTeamHomeTownLabel)
     }
     
     private func addDateTitleLabel() {
@@ -217,7 +174,7 @@ class MatchView: UIView {
     
     private func addDateContentLabel() {
         dateContentLabel.textColor = UIColor.fcjBlack
-        dateContentLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.small)
+        dateContentLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.teeny)
         dateContentLabel.textAlignment = .center
 
         self.addSubview(dateContentLabel)
@@ -225,7 +182,7 @@ class MatchView: UIView {
     
     private func addTimeContentLabel() {
         timeContentLabel.textColor = UIColor.fcjBlack
-        timeContentLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.small)
+        timeContentLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.teeny)
         timeContentLabel.textAlignment = .center
 
         self.addSubview(timeContentLabel)
@@ -241,61 +198,20 @@ class MatchView: UIView {
     }
     
     private func addCopetitionImageView() {
-        self.addSubview(competitionImageView)
-    }
-
-    private func addRoundTitleLabel() {
-        roundTitleLabel.textColor = UIColor.fcjDefaultGrey
-        roundTitleLabel.font = UIFont.fcjLightFont(ofSize: FontSize.tiny)
-
-        self.addSubview(roundTitleLabel)
-    }
-
-    private func addRoundContentLabel() {
-        roundContentLabel.textColor = UIColor.fcjBlack
-        roundContentLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.tiny)
-
-        self.addSubview(roundContentLabel)
-    }
-    
-    
-    private func addSeasonTitleLabel() {
-        seasonTitleLabel.text = "sezona".uppercased()
-        seasonTitleLabel.textColor = UIColor.fcjDefaultGrey
-        seasonTitleLabel.font = UIFont.fcjLightFont(ofSize: FontSize.tiny)
-
-        self.addSubview(seasonTitleLabel)
-    }
-
-    private func addSeasonContentLabel() {
-        seasonContentLabel.textColor = UIColor.fcjBlack
-        seasonContentLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.tiny)
-
-        self.addSubview(seasonContentLabel)
-    }
-    
-    private func addLocationContentLabel() {
-        locationContentLabel.textColor = UIColor.fcjBlack
-        locationContentLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.small)
-        locationContentLabel.textAlignment = .center
-
-        self.addSubview(locationContentLabel)
-    }
-    
-    private func addLocationTitleLabel() {
-        locationTitleLabel.text = "lokacija".uppercased()
-        locationTitleLabel.textColor = UIColor.fcjDefaultGrey
-        locationTitleLabel.font = UIFont.fcjBoldFont(ofSize: FontSize.tiny)
-        locationTitleLabel.textAlignment = .center
-
-        self.addSubview(locationTitleLabel)
+        containerView.addSubview(competitionImageView)
     }
     
     private func setupConstraints() {
-        homeTeamImageView.snp.makeConstraints { (make) in
+        containerView.snp.makeConstraints { (make) in
             make.top.equalToSuperview()
+            make.left.equalToSuperview().offset(Margins.medium)
+            make.right.bottom.equalToSuperview().inset(Margins.medium)
+        }
+        
+        homeTeamImageView.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(Margins.regular)
             make.right.equalTo(self.snp.centerX).offset((Margins.extraLarge + 20) * -1)
-            make.size.equalTo(Constants.teamImageViewSizeBig)
+            make.size.equalTo(Constants.teamImageViewSize)
         }
         
         homeTeamNameLabel.snp.makeConstraints { (make) in
@@ -312,7 +228,7 @@ class MatchView: UIView {
         awayTeamImageView.snp.makeConstraints { (make) in
             make.centerY.equalTo(homeTeamImageView)
             make.left.equalTo(self.snp.centerX).offset(Margins.extraLarge + 20)
-            make.size.equalTo(Constants.teamImageViewSizeBig)
+            make.size.equalTo(Constants.teamImageViewSize)
         }
         
         awayTeamNameLabel.snp.makeConstraints { (make) in
@@ -351,42 +267,7 @@ class MatchView: UIView {
             make.centerX.equalToSuperview()
             make.size.equalTo(Constants.firstLeagueImageViewSize)
         }
-        
-        roundTitleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(competitionImageView.snp.bottom)
-            make.right.equalTo(self.snp.centerX).offset(Margins.tiny * -1)
-        }
-
-        roundContentLabel.snp.makeConstraints { (make) in
-            make.centerY.equalTo(roundTitleLabel)
-            make.left.equalTo(self.snp.centerX).offset(Margins.tiny)
-        }
-        
-        
-        seasonTitleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(roundTitleLabel.snp.bottom)
-            make.right.equalTo(roundTitleLabel)
-        }
-
-        seasonContentLabel.snp.makeConstraints { (make) in
-            make.centerY.equalTo(seasonTitleLabel)
-            make.left.equalTo(roundContentLabel)
-        }
-        
-        locationContentLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(seasonTitleLabel.snp.bottom).offset(Margins.normal)
-            make.centerX.equalToSuperview()
-        }
-        
-        locationTitleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(locationContentLabel.snp.bottom)
-            make.bottom.centerX.equalToSuperview()
-        }
     }
 }
 
-extension MatchView {
-    private func nextMatchLayout() {
-        
-    }
-}
+

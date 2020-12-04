@@ -27,4 +27,12 @@ extension DataProvider {
     func getNextMatch(successHandler: ((Match) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
         restDataClient.getNextMatch(successHandler: successHandler, failHandler: failHandler)
     }
+    
+    func getNextMatches(successHandler: (([Match]) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
+        restDataClient.getNextMatches(successHandler: successHandler, failHandler: failHandler)
+    }
+    
+    func getPreviousMatches(successHandler: (([Match]) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
+        restDataClient.getPreviousMatches(successHandler: successHandler, failHandler: failHandler)
+    }
 }

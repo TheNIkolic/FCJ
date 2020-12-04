@@ -15,9 +15,14 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     
     let homeTab: HomeViewController = HomeViewController()
     let matchesTab: MatchesViewController = MatchesViewController()
+    let teamTab: TeamViewController = TeamViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBar.barTintColor = UIColor.fcjDefaultBlue
+        self.tabBar.isTranslucent = false
+        self.tabBar.isOpaque = false
         
         setupViewControllers()
         
@@ -30,19 +35,22 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         
         tabBarItemAppearance()
         
-        viewControllers = [homeTab, matchesTab]
+        viewControllers = [homeTab, matchesTab, teamTab]
     }
     
     private func tabBarItemAppearance() {
-        homeTab.tabBarItem.title = "Home"
-        matchesTab.tabBarItem.title = "Matches"
+        homeTab.tabBarItem.title = "Naslovna"
+        matchesTab.tabBarItem.title = "Utakmice"
+        teamTab.tabBarItem.title = "Tim"
     }
     
     private func addHeaderView() {
         headerView.contentMode = .scaleAspectFill
         headerView.applyShadowWith(color: UIColor.fcjBlack, offset: CGSize(width: 0, height: 4), opacity: 1, radius: 10)
         headerView.addTap {
-            self.present(UINavigationController(rootViewController: BaseDataController()), animated: true)
+            let vc: UINavigationController = UINavigationController(rootViewController: BaseDataController())
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
         }
         
         view.addSubview(headerView)

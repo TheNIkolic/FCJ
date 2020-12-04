@@ -37,7 +37,7 @@ extension RestDataClient {
         
         let url: String = matchBaseUrl
         
-        AF.request(url.url!, method: .get, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: [Match].self) { (response) in
+        AF.request(url.url!, method: .get, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: [Match].self, decoder: CustomDecoder()) { (response) in
             let errorResponse: ErrorResponse = ErrorResponse()
             if let code = response.response?.statusCode {
                 if code >= 200 && code < 300 {
@@ -141,6 +141,60 @@ extension RestDataClient {
         let url: String = matchBaseUrl + "/next-match"
         
         AF.request(url.url!, method: .get, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: Match.self, decoder: CustomDecoder()) { (response) in
+            
+            let errorResponse: ErrorResponse = ErrorResponse()
+            if let code = response.response?.statusCode {
+                if code >= 200 && code < 300 {
+                    
+                    guard let match = response.value else { return }
+                    
+                    successHandler?(match)
+                    return
+                }
+                else {
+                    errorResponse.message = "Server error - \(code)"
+                }
+            }
+            else {
+                errorResponse.error = "Server error - no response"
+            }
+
+            failHandler?(errorResponse)
+        }
+    }
+    
+    func getNextMatches(successHandler: (([Match]) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
+        
+        let url: String = matchBaseUrl + "/next-matches"
+        
+        AF.request(url.url!, method: .get, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: [Match].self, decoder: CustomDecoder()) { (response) in
+            
+            let errorResponse: ErrorResponse = ErrorResponse()
+            if let code = response.response?.statusCode {
+                if code >= 200 && code < 300 {
+                    
+                    guard let match = response.value else { return }
+                    
+                    successHandler?(match)
+                    return
+                }
+                else {
+                    errorResponse.message = "Server error - \(code)"
+                }
+            }
+            else {
+                errorResponse.error = "Server error - no response"
+            }
+
+            failHandler?(errorResponse)
+        }
+    }
+    
+    func getPreviousMatches(successHandler: (([Match]) -> Void)? = nil, failHandler: ((ErrorResponse) -> Void)? = nil) {
+        
+        let url: String = matchBaseUrl + "/previous-matches"
+        
+        AF.request(url.url!, method: .get, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: [Match].self, decoder: CustomDecoder()) { (response) in
             
             let errorResponse: ErrorResponse = ErrorResponse()
             if let code = response.response?.statusCode {

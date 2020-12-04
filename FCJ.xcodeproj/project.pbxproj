@@ -88,6 +88,9 @@
 		6227E5F72535D9F50041AE53 /* FCJGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227E5F62535D9F50041AE53 /* FCJGradientView.swift */; };
 		6227E5F82535D9F50041AE53 /* FCJGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227E5F62535D9F50041AE53 /* FCJGradientView.swift */; };
 		6227E5F92535D9F50041AE53 /* FCJGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227E5F62535D9F50041AE53 /* FCJGradientView.swift */; };
+		624B848A25599C0500F833DE /* FCJAdminTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624B848925599C0500F833DE /* FCJAdminTextField.swift */; };
+		624B848B25599C0500F833DE /* FCJAdminTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624B848925599C0500F833DE /* FCJAdminTextField.swift */; };
+		624B848C25599C0500F833DE /* FCJAdminTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624B848925599C0500F833DE /* FCJAdminTextField.swift */; };
 		624C317425575E8200659C05 /* CustomDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C317325575E8200659C05 /* CustomDecoder.swift */; };
 		624C317525575E8200659C05 /* CustomDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C317325575E8200659C05 /* CustomDecoder.swift */; };
 		624C317625575E8200659C05 /* CustomDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C317325575E8200659C05 /* CustomDecoder.swift */; };
@@ -127,12 +130,18 @@
 		629BD0C9254E41ED001341F1 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629BD0C8254E41ED001341F1 /* DateExtensions.swift */; };
 		629BD0CA254E41ED001341F1 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629BD0C8254E41ED001341F1 /* DateExtensions.swift */; };
 		629BD0CB254E41ED001341F1 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629BD0C8254E41ED001341F1 /* DateExtensions.swift */; };
+		62A58991255AE71100AB5319 /* CompetitionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A58990255AE71100AB5319 /* CompetitionsTableViewCell.swift */; };
+		62A58992255AE71100AB5319 /* CompetitionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A58990255AE71100AB5319 /* CompetitionsTableViewCell.swift */; };
+		62A58993255AE71100AB5319 /* CompetitionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A58990255AE71100AB5319 /* CompetitionsTableViewCell.swift */; };
 		62AA49B32541D1F100C021E1 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA49B22541D1F100C021E1 /* MatchesViewController.swift */; };
 		62AA49B42541D1F100C021E1 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA49B22541D1F100C021E1 /* MatchesViewController.swift */; };
 		62AA49B52541D1F100C021E1 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA49B22541D1F100C021E1 /* MatchesViewController.swift */; };
-		62AA49BD2541DA0700C021E1 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA49BC2541DA0700C021E1 /* MatchesTableViewCell.swift */; };
-		62AA49BE2541DA0700C021E1 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA49BC2541DA0700C021E1 /* MatchesTableViewCell.swift */; };
-		62AA49BF2541DA0700C021E1 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA49BC2541DA0700C021E1 /* MatchesTableViewCell.swift */; };
+		62AF77542566D00F001B22C7 /* PreviousMatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF77532566D00F001B22C7 /* PreviousMatchTableViewCell.swift */; };
+		62AF77552566D00F001B22C7 /* PreviousMatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF77532566D00F001B22C7 /* PreviousMatchTableViewCell.swift */; };
+		62AF77562566D00F001B22C7 /* PreviousMatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF77532566D00F001B22C7 /* PreviousMatchTableViewCell.swift */; };
+		62AF775B2566D082001B22C7 /* NextMatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF775A2566D082001B22C7 /* NextMatchesTableViewCell.swift */; };
+		62AF775C2566D082001B22C7 /* NextMatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF775A2566D082001B22C7 /* NextMatchesTableViewCell.swift */; };
+		62AF775D2566D082001B22C7 /* NextMatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF775A2566D082001B22C7 /* NextMatchesTableViewCell.swift */; };
 		62AF7CF6254C76BF000DCB77 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF7CF5254C76BF000DCB77 /* Competition.swift */; };
 		62AF7CF7254C76BF000DCB77 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF7CF5254C76BF000DCB77 /* Competition.swift */; };
 		62AF7CF8254C76BF000DCB77 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF7CF5254C76BF000DCB77 /* Competition.swift */; };
@@ -148,6 +157,9 @@
 		62C5D4BF2524BE4C0081E571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C5D4BD2524BE4C0081E571 /* LaunchScreen.storyboard */; };
 		62C5D4CA2524BE4C0081E571 /* FCJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5D4C92524BE4C0081E571 /* FCJTests.swift */; };
 		62C5D4D52524BE4C0081E571 /* FCJUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5D4D42524BE4C0081E571 /* FCJUITests.swift */; };
+		62C6DBAB25795AA40020C992 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C6DBAA25795AA40020C992 /* TeamViewController.swift */; };
+		62C6DBAC25795AA40020C992 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C6DBAA25795AA40020C992 /* TeamViewController.swift */; };
+		62C6DBAD25795AA40020C992 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C6DBAA25795AA40020C992 /* TeamViewController.swift */; };
 		8D061959E4A774051D515650 /* Pods_FCJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA4FE050EFA05AC0F90E79D /* Pods_FCJ.framework */; };
 		9CCC78C3034A3177DAD7AE0E /* Pods_FCJ_FCJUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE805CA671C316FCBD8FBB1 /* Pods_FCJ_FCJUITests.framework */; };
 		F407AAAE26B252FC44FD7B62 /* Pods_FCJTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CA777B3994497DC477236E /* Pods_FCJTests.framework */; };
@@ -201,6 +213,7 @@
 		6226BB8F2535254A0009779B /* TeamDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataDelegate.swift; sourceTree = "<group>"; };
 		6227E5EC2535D52E0041AE53 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		6227E5F62535D9F50041AE53 /* FCJGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCJGradientView.swift; sourceTree = "<group>"; };
+		624B848925599C0500F833DE /* FCJAdminTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCJAdminTextField.swift; sourceTree = "<group>"; };
 		624C317325575E8200659C05 /* CustomDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDecoder.swift; sourceTree = "<group>"; };
 		62529CA725310C9B00A5C8F5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		6268D5D7252DFABB0009D865 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -214,8 +227,10 @@
 		629BD0B3254E3DD0001341F1 /* CompetitionDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionDataProvider.swift; sourceTree = "<group>"; };
 		629BD0BB254E3ED0001341F1 /* CompetitionsDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsDataViewController.swift; sourceTree = "<group>"; };
 		629BD0C8254E41ED001341F1 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		62A58990255AE71100AB5319 /* CompetitionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsTableViewCell.swift; sourceTree = "<group>"; };
 		62AA49B22541D1F100C021E1 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
-		62AA49BC2541DA0700C021E1 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewCell.swift; sourceTree = "<group>"; };
+		62AF77532566D00F001B22C7 /* PreviousMatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousMatchTableViewCell.swift; sourceTree = "<group>"; };
+		62AF775A2566D082001B22C7 /* NextMatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchesTableViewCell.swift; sourceTree = "<group>"; };
 		62AF7CF5254C76BF000DCB77 /* Competition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
 		62AFBDE32537398700702B27 /* FCJImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCJImageView.swift; sourceTree = "<group>"; };
 		62AFBDEA25373F5A00702B27 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -231,6 +246,7 @@
 		62C5D4D02524BE4C0081E571 /* FCJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FCJUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C5D4D42524BE4C0081E571 /* FCJUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCJUITests.swift; sourceTree = "<group>"; };
 		62C5D4D62524BE4C0081E571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C6DBAA25795AA40020C992 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		6CE06DA1BB4C21B050E7651D /* Pods-FCJ-FCJUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJ-FCJUITests.debug.xcconfig"; path = "Target Support Files/Pods-FCJ-FCJUITests/Pods-FCJ-FCJUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E37A69B234613544507D65E /* Pods-FCJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCJTests.release.xcconfig"; path = "Target Support Files/Pods-FCJTests/Pods-FCJTests.release.xcconfig"; sourceTree = "<group>"; };
 		9EE805CA671C316FCBD8FBB1 /* Pods_FCJ_FCJUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCJ_FCJUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,6 +310,7 @@
 			children = (
 				6216F04B252CCAF80091D6B6 /* FCJLabel.swift */,
 				6226BB3A253492B30009779B /* FCJButton.swift */,
+				624B848925599C0500F833DE /* FCJAdminTextField.swift */,
 				6227E5F62535D9F50041AE53 /* FCJGradientView.swift */,
 				62AFBDE32537398700702B27 /* FCJImageView.swift */,
 			);
@@ -387,6 +404,7 @@
 				627894F4253C84490092BA21 /* BaseAndNavigation */,
 				627894E6253C82980092BA21 /* Home */,
 				62AA49B12541D1CC00C021E1 /* Matches */,
+				62C6DBA925795A870020C992 /* Team */,
 				6227E5EC2535D52E0041AE53 /* UIConstants.swift */,
 			);
 			path = UI;
@@ -430,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				629BD0BB254E3ED0001341F1 /* CompetitionsDataViewController.swift */,
+				62A58990255AE71100AB5319 /* CompetitionsTableViewCell.swift */,
 			);
 			path = CompetitionsDataController;
 			sourceTree = "<group>";
@@ -469,7 +488,8 @@
 			isa = PBXGroup;
 			children = (
 				62AA49B22541D1F100C021E1 /* MatchesViewController.swift */,
-				62AA49BC2541DA0700C021E1 /* MatchesTableViewCell.swift */,
+				62AF775A2566D082001B22C7 /* NextMatchesTableViewCell.swift */,
+				62AF77532566D00F001B22C7 /* PreviousMatchTableViewCell.swift */,
 			);
 			path = Matches;
 			sourceTree = "<group>";
@@ -530,6 +550,14 @@
 				62C5D4D62524BE4C0081E571 /* Info.plist */,
 			);
 			path = FCJUITests;
+			sourceTree = "<group>";
+		};
+		62C6DBA925795A870020C992 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				62C6DBAA25795AA40020C992 /* TeamViewController.swift */,
+			);
+			path = Team;
 			sourceTree = "<group>";
 		};
 		E76D61085579F3027CACE965 /* Frameworks */ = {
@@ -798,11 +826,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62AF77542566D00F001B22C7 /* PreviousMatchTableViewCell.swift in Sources */,
 				62AF7CF6254C76BF000DCB77 /* Competition.swift in Sources */,
 				629BD0BC254E3ED0001341F1 /* CompetitionsDataViewController.swift in Sources */,
 				62C5D4B32524BE4B0081E571 /* AppDelegate.swift in Sources */,
 				6226BB2D25347E820009779B /* EncodableExtensions.swift in Sources */,
 				6268D5EB252E01BD0009D865 /* UIFontExtension.swift in Sources */,
+				62C6DBAB25795AA40020C992 /* TeamViewController.swift in Sources */,
 				627894E8253C83920092BA21 /* HomeViewController.swift in Sources */,
 				6226BB5F2534E1200009779B /* TeamsTableView.swift in Sources */,
 				629BD0A3254E3C09001341F1 /* CompetitionRequest.swift in Sources */,
@@ -817,6 +847,7 @@
 				629BD0B4254E3DD0001341F1 /* CompetitionDataProvider.swift in Sources */,
 				6226BB05253473720009779B /* Team.swift in Sources */,
 				6226BB42253494150009779B /* TeamsDataViewController.swift in Sources */,
+				62AF775B2566D082001B22C7 /* NextMatchesTableViewCell.swift in Sources */,
 				62AA49B32541D1F100C021E1 /* MatchesViewController.swift in Sources */,
 				62529CA825310C9B00A5C8F5 /* TabBarController.swift in Sources */,
 				6216F041252CCA060091D6B6 /* UIViewExtension.swift in Sources */,
@@ -831,13 +862,14 @@
 				6226BB902535254A0009779B /* TeamDataDelegate.swift in Sources */,
 				62AFBDEB25373F5A00702B27 /* UIImageExtension.swift in Sources */,
 				6226BAD6253470880009779B /* BaseDataController.swift in Sources */,
+				624B848A25599C0500F833DE /* FCJAdminTextField.swift in Sources */,
+				62A58991255AE71100AB5319 /* CompetitionsTableViewCell.swift in Sources */,
 				62C5D4B52524BE4B0081E571 /* SceneDelegate.swift in Sources */,
 				6226BB782534E8E40009779B /* AddTeamView.swift in Sources */,
 				6227E5ED2535D52E0041AE53 /* UIConstants.swift in Sources */,
 				6226BAF3253472F70009779B /* BaseRestDataClient.swift in Sources */,
 				6226BB0D253473B70009779B /* TeamRequest.swift in Sources */,
 				6227E5F72535D9F50041AE53 /* FCJGradientView.swift in Sources */,
-				62AA49BD2541DA0700C021E1 /* MatchesTableViewCell.swift in Sources */,
 				6216F056252CCE890091D6B6 /* BaseViewController.swift in Sources */,
 				629BD0C9254E41ED001341F1 /* DateExtensions.swift in Sources */,
 				6226BAFB253473530009779B /* ErrorResponse.swift in Sources */,
@@ -859,6 +891,7 @@
 				6226BB512534BB9C0009779B /* TeamEditDataView.swift in Sources */,
 				6226BB06253473720009779B /* Team.swift in Sources */,
 				6227E5EE2535D52E0041AE53 /* UIConstants.swift in Sources */,
+				62AF77552566D00F001B22C7 /* PreviousMatchTableViewCell.swift in Sources */,
 				6226BAF4253472F70009779B /* BaseRestDataClient.swift in Sources */,
 				6226BB2E25347E820009779B /* EncodableExtensions.swift in Sources */,
 				6226BB0E253473B70009779B /* TeamRequest.swift in Sources */,
@@ -870,17 +903,20 @@
 				62529CA925310C9B00A5C8F5 /* TabBarController.swift in Sources */,
 				6226BB912535254A0009779B /* TeamDataDelegate.swift in Sources */,
 				6206D3C12536174D00ED9328 /* MatchesDataViewController.swift in Sources */,
-				62AA49BE2541DA0700C021E1 /* MatchesTableViewCell.swift in Sources */,
 				6226BAEA253472C80009779B /* DataProvider.swift in Sources */,
 				6226BB602534E1200009779B /* TeamsTableView.swift in Sources */,
 				6206D42D25363FA800ED9328 /* MatchDataProvider.swift in Sources */,
 				6226BB4A2534AF950009779B /* TeamsTableViewCell.swift in Sources */,
+				62C6DBAC25795AA40020C992 /* TeamViewController.swift in Sources */,
 				627894F8253C84B10092BA21 /* MatchView.swift in Sources */,
 				6216F04D252CCAF80091D6B6 /* FCJLabel.swift in Sources */,
 				629BD0AE254E3C48001341F1 /* CompetitionRestDataClient.swift in Sources */,
 				627894E9253C83920092BA21 /* HomeViewController.swift in Sources */,
+				62A58992255AE71100AB5319 /* CompetitionsTableViewCell.swift in Sources */,
 				629BD0B5254E3DD0001341F1 /* CompetitionDataProvider.swift in Sources */,
+				62AF775C2566D082001B22C7 /* NextMatchesTableViewCell.swift in Sources */,
 				62AFBDEC25373F5A00702B27 /* UIImageExtension.swift in Sources */,
+				624B848B25599C0500F833DE /* FCJAdminTextField.swift in Sources */,
 				6226BB3525347EB20009779B /* StringExtensions.swift in Sources */,
 				6206D41F25363DC300ED9328 /* Match.swift in Sources */,
 				6216F042252CCA060091D6B6 /* UIViewExtension.swift in Sources */,
@@ -910,6 +946,7 @@
 				6226BB522534BB9C0009779B /* TeamEditDataView.swift in Sources */,
 				6226BB07253473720009779B /* Team.swift in Sources */,
 				6227E5EF2535D52E0041AE53 /* UIConstants.swift in Sources */,
+				62AF77562566D00F001B22C7 /* PreviousMatchTableViewCell.swift in Sources */,
 				6226BAF5253472F70009779B /* BaseRestDataClient.swift in Sources */,
 				6226BB2F25347E820009779B /* EncodableExtensions.swift in Sources */,
 				6226BB0F253473B70009779B /* TeamRequest.swift in Sources */,
@@ -921,17 +958,20 @@
 				62529CAA25310C9B00A5C8F5 /* TabBarController.swift in Sources */,
 				6226BB922535254A0009779B /* TeamDataDelegate.swift in Sources */,
 				6206D3C22536174D00ED9328 /* MatchesDataViewController.swift in Sources */,
-				62AA49BF2541DA0700C021E1 /* MatchesTableViewCell.swift in Sources */,
 				6226BAEB253472C80009779B /* DataProvider.swift in Sources */,
 				6226BB612534E1200009779B /* TeamsTableView.swift in Sources */,
 				6206D42E25363FA800ED9328 /* MatchDataProvider.swift in Sources */,
 				6226BB4B2534AF950009779B /* TeamsTableViewCell.swift in Sources */,
+				62C6DBAD25795AA40020C992 /* TeamViewController.swift in Sources */,
 				627894F9253C84B10092BA21 /* MatchView.swift in Sources */,
 				6216F04E252CCAF80091D6B6 /* FCJLabel.swift in Sources */,
 				629BD0AF254E3C48001341F1 /* CompetitionRestDataClient.swift in Sources */,
 				627894EA253C83920092BA21 /* HomeViewController.swift in Sources */,
+				62A58993255AE71100AB5319 /* CompetitionsTableViewCell.swift in Sources */,
 				629BD0B6254E3DD0001341F1 /* CompetitionDataProvider.swift in Sources */,
+				62AF775D2566D082001B22C7 /* NextMatchesTableViewCell.swift in Sources */,
 				62AFBDED25373F5A00702B27 /* UIImageExtension.swift in Sources */,
+				624B848C25599C0500F833DE /* FCJAdminTextField.swift in Sources */,
 				6226BB3625347EB20009779B /* StringExtensions.swift in Sources */,
 				6206D42025363DC300ED9328 /* Match.swift in Sources */,
 				6216F043252CCA060091D6B6 /* UIViewExtension.swift in Sources */,

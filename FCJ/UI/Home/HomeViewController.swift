@@ -72,8 +72,10 @@ class HomeViewController: BaseViewController {
             self.nextGameView.awayTeamImage = nextMatch.awayTeam.imageUrl
             self.nextGameView.awayTeamName = nextMatch.awayTeam.name
             self.nextGameView.awayTeamHomeTown = nextMatch.awayTeam.homeTown
-            self.nextGameView.kickOffDate = nextMatch.kickOffDate.toString(dateFormat: "dd.MM.yyyy")
+            self.nextGameView.kickOffDate = nextMatch.kickOffDate.toString(dateFormat: "dd. MMM yyyy")
             self.nextGameView.kickOffTime = nextMatch.kickOffDate.toString(dateFormat: "HH:mm")
+            self.nextGameView.competitionImage = nextMatch.competition.imageUrl
+            self.nextGameView.comptetitionStageName = nextMatch.competition.stageName
             self.nextGameView.season = nextMatch.season
             self.nextGameView.round = nextMatch.stage
             self.nextGameView.location = nextMatch.location
@@ -114,7 +116,8 @@ class HomeViewController: BaseViewController {
     
     private func setupConstraints() {
         nextGameView.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
+            make.centerY.equalToSuperview().offset(Margins.extraBig)
+            make.centerX.equalToSuperview()
             make.width.equalTo(Constants.nextGameViewSize.width)
         }
         
